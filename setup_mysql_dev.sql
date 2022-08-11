@@ -1,13 +1,13 @@
---prepares a MySQL server for the project:
+-- prepares a MySQL server for the project:
 
---Creating a data base
+-- Creating a data base
 CREATE DATABASE IF NOT EXISTS `hbnb_dev_db`;
 
---Creating user
+-- Creating user
 CREATE USER IF NOT EXISTS 'hbnb_dev'@'localhost' IDENTIFIED BY 'hbnb_dev_pwd';
 
---Granting privileges
-GRANT ALL PRIVILEGES ON `hbnb_dev_db`.* TO 'hbnb_dev'@'localhost';
+-- Granting privileges
+GRANT ALL PRIVILEGES ON hbnb_dev_db.* TO 'hbnb_dev'@'localhost';
 
---Selecting
-GRANT SELECT ON `performance_schema`.* TO 'hbnb_dev'@'localhost';
+-- Selecting
+GRANT SELECT ON performance_schema.* TO 'hbnb_dev'@'localhost';
