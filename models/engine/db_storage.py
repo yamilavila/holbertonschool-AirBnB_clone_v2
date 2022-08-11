@@ -37,7 +37,7 @@ class DBStorage:
     def all(self, cls=None):
         """Returns dictionary"""
         table_dict = {}
-        classes = {'State': State, 'City': City}
+        classes = {'State': State, 'City': User}
         if cls is None:
             for c in classes:
                 result = self.__session.query(classes[c]).all()
