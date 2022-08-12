@@ -12,6 +12,7 @@ from models.amenity import Amenity
 from models.place import Place
 from models.user import User
 from models.review import Review
+
 os.environ['HBNB_MYSQL_USER'] = 'hbnb_dev'
 os.environ['HBNB_MYSQL_PWD'] = 'hbnb_dev_pwd'
 os.environ['HBNB_MYSQL_HOST'] = 'localhost'
@@ -37,8 +38,13 @@ class DBStorage:
     def all(self, cls=None):
         """Returns dictionary"""
         table_dict = {}
-        classes = {'State': State, 'City': City,
-                   'User': User, 'Place': Place, 'Review': Review}
+        classes = {
+            'State': State,
+            'City': City,
+            'User': User,
+            'Place': Place,
+            'Review': Review,
+            'Amenity': Amenity}
         if cls is None:
             for c in classes:
                 result = self.__session.query(classes[c]).all()
