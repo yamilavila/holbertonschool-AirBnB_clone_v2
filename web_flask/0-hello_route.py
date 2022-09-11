@@ -3,7 +3,8 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/frontPage/', strict_slashes=False)
+
+@app.route('/', strict_slashes=False)
 def open_hbnb():
     """print Hello HBNB!"""
     return "Hello HBNB!"
