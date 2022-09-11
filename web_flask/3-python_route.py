@@ -23,6 +23,7 @@ def cfun(text):
     c_input = c_input.replace('_', ' ')
     return c_input
 
+
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def py_is_cool(text='is cool'):
