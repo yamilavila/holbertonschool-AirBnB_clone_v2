@@ -10,12 +10,12 @@ def open_hbnb():
     return "Hello HBNB!"
 
 
-@app.route('/', strict_slashes=False)
+@app.route('/hbnb', strict_slashes=False)
 def hbnb():
     """prints Hbnb"""
     return 'HBNB'
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     """runs the app"""
     app.run(host='0.0.0.0', port=5000)
