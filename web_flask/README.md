@@ -1,0 +1,1 @@
+Flask is one of the most popular web application frameworks written in Python. It is a microframework designed for an easy and quick start. Extending with tools and libraries adds more functionality to Flask for more complex projects.
